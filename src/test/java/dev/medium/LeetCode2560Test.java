@@ -21,7 +21,15 @@ public class LeetCode2560Test {
 
     static Stream<Arguments> testCases() {
         return Stream.of(
-                Arguments.of(new int[]{2, 3, 5, 9}, 2, 0)
+                Arguments.of(new int[]{2, 3, 5, 9}, 2, 5),
+                Arguments.of(new int[]{2, 7, 9, 3, 1}, 2, 2),
+                Arguments.of(new int[]{3, 1, 4, 1, 5, 9}, 2, 1),
+                Arguments.of(new int[]{10, 2, 8, 5}, 1, 2),
+                Arguments.of(new int[]{2, 7, 9, 3, 1}, 3, 9),
+                Arguments.of(new int[]{100, 1, 100, 1, 100}, 2, 1),
+                Arguments.of(new int[]{100, 1, 100, 1, 100}, 3, 100),
+                Arguments.of(new int[]{7, 7, 7, 7, 7, 7, 7}, 3, 7),
+                Arguments.of(new int[]{1, 100, 2, 200, 3, 300, 4}, 4, 4)
         );
     }
 }
