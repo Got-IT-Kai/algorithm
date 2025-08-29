@@ -20,7 +20,13 @@ class LeetCode2551Test {
 
     static Stream<Arguments> testCases() {
         return Stream.of(
-                Arguments.of(new int[]{1, 3, 5, 1}, 2, 0L)
+                Arguments.of(new int[]{1, 3, 5, 1}, 2, 4L),
+                Arguments.of(new int[]{1, 3}, 2, 0L),
+                Arguments.of(new int[]{1, 3, 5, 1, 2, 8, 4, 3}, 3, 15L),
+                Arguments.of(new int[]{1, 3, 5, 1}, 4, 0L),
+                Arguments.of(new int[]{1, 1, 1, 1, 1}, 3, 0L),
+                Arguments.of(new int[]{10, 20, 30}, 1, 0L),
+                Arguments.of(new int[]{10, 20, 30}, 2, 20L)
         );
     }
 }
